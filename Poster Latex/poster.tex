@@ -60,7 +60,7 @@
 % ====================
 
 \footercontent{
-  \href{https://github.com/Technically-Not-The-Worst/Physics-Simulation}{Click for the code of the physics simulations} \hfill
+  \href{https://github.com/Technically-Not-The-Worst/Physics-Simulation}{Click for the full repository of all relevant files} \hfill
   \href{mailto:carsonthomas@albertpark.vic.edu.au}{carsonthomas@albertparkcollege.vic.adu.au}}
 % (can be left out to remove footer)
 
@@ -87,21 +87,22 @@
 
   \begin{block}{Introduction}
 
-    Parachutes have been used as a practical means of slowing one's fall for hundreds of years. The optimisation of a parachute comes down to many factors; its size, shape, material and its spill hole. In this investigation aim to standardise all of these variables except for the size of the spill hole, and in doing so I aim to find the relationship between the size of the spill hole and the performance of the parachute. Each of the test will be done with the same base parachute with increasing size spill holes in the centre. I expect the average time of the tests to be inversely proportional to the size of the spill hole. I also expect the consistency of the parachute to roughly proportional to the spill hole size up until a plateau. In essence I hypothesise that due to the larger surface area of the parachutes with smaller spill holes they will fall slower due to the greater induce drag, but the spill holes will introduce a uniform space for air to flow making the parachutes more stable and consistent.
+    Parachutes have been used as a practical means of slowing one's fall for hundreds of years. The optimisation of such parachutes has changed over the years as well but in essence the performance of parachutes comes down to 5 key factors. These factors are; the shape of the parachute, the size of the parachute, the material of the parachute and the size of the spill hole. In this investigation all variables except for the spill hole size will be kept the same across tests and in doing so isolating the spill hole size with the aim to find the relationship between the size of the spill hole and the performance of the parachute. The expected results are as follows, as the size of the spill hole increases the time for the parachute to reach the ground should also increase. Additionally as the spill hole increases in size the consistency and stability of the parachutes should also improve up until a plateau of diminishing returns. These results are expected due to the larger surface area of the parachutes with smaller spill holes leading to a greater induced drag and a hence a greater time to reach the ground. Along with the change in surface area the spill holes should introduce a uniform space for air to flow resulting in a positive relationship between the size of the spill hole and the more stable and consistent the parachutes.
 
   \end{block}
 
   \begin{block}{Method}
-For this experiment the independant variable will be the radius and hence size of the spill. This means that the parachutes will have to be identical in all other factors. 
+For this experiment the independent variable will be the radius and hence size of the spill. This means that the parachutes will have to be identical in all other factors. 
 
     \begin{itemize}
       \item \textbf{Parachute geometry:} all parachutes will be the same shape and size, circles of radius 105mm
       \item \textbf{Parachute material:} each parachute must be made of the some material, A4 printer paper
       \item \textbf{Attached mass:} the mass that is attached to each of the masses must be the same, 50g
        \item \textbf{Drop height:} the height that each parachute must be the same across all drops, 9m 
+       
     \end{itemize}
 
-With those factors being identical across parachutes the one thing changing will be the size of the spill hole. In this experiment there will be 11 parachutes total, 1 control with no spill hole and 10 with increasingly large spill holes. The parachutes will have the spill holes which will be measured by there radius, this radius will increase incrementally by 5mm. Each parachute will use string to attach the 50g mass to 4 points on the parachute equal distances apart on the parachutes. Each parachute shall be dropped from the edge of the balcony at 9 meter and shall be timed from the moment of release to the moment of impact with the ground.
+Given all other factors are constant across the parachutes, the independant variable will be the size of the spill hole. This experiment will involve a total of 11 parachutes: one control parachute without a spill hole and 10 parachutes with progressively larger spill holes. The size of each spill hole will be measured by its radius, which will increase incrementally by 5 mm. Each parachute will have a string attached to a 50g mass at four equidistant points. All parachutes will be dropped from a height of 9 meters, and the time from release to landing will be recorded.
 
 \begin{enumerate}
     \item Ensure that all parachutes are identical in terms of material, shape, and overall size, except for the size of the spill hole.
@@ -173,7 +174,7 @@ With those factors being identical across parachutes the one thing changing will
 \begin{column}{\colwidth}
 
 \begin{block}{The Simulations}
-Using the equations listed prior and discrete approximations of them (using time steps of 0.001 seconds), I created a simulation to predict the time each drop would take. With these simulations, I created the predicted height and velocity against time graph for each of the parachutes, which you can see below in Figure~\ref{fig:example}. The simulations can be customized by the same variables as the equations, but for this use, only two need to be changed: $A$ (Cross-sectional area) and $C$ (Drag coefficient). The cross-sectional area decreases as the hole in the center increases, and the drag coefficient also changes because the geometry of the parachute changes, affecting how it interacts with the fluid medium. While the area is easily calculated, finding the drag coefficient without CFD software was challenging, so I used educated guesses based on research. If I had access to CFD, the predictions would be more accurate, but this is the best approximation given the resources available.
+Using the equations listed previously and discrete approximations of them (with time steps of 0.001 seconds), a simulation was created to predict the time each drop would take. These simulations generated the predicted height and velocity versus time graph for each of the parachutes, as shown below in Figure 1 and Table 1. The simulations can be customised using the same variables as the equations, but for this analysis, only two need to be modified: $A$ (cross-sectional area) and $C$ (drag coefficient). The cross-sectional area decreases as the hole in the centre increases, and the drag coefficient changes due to the  change in the geometry of the parachute, which affects its interaction with the fluid medium. While the area is easily calculated, determining the drag coefficient without CFD (Computational Fluid Dynamics) software proved challenging, necessitating the use of estimates based on research. Access to CFD would have enhanced the accuracy of the predictions, but this represents the best approximation given the available resources.
 
 \begin{columns}
 
@@ -205,7 +206,7 @@ Using the equations listed prior and discrete approximations of them (using time
     \begin{column}{0.5\textwidth}  % Corrected from \colwidth to \textwidth
         \begin{figure}
             \centering
-            \includegraphics[width=1\linewidth]{/Users/carsonthomas/All_in_one.png} % Ensure image is in the correct directory
+            \includegraphics[width=1\linewidth]{/Users/carsonthomas/Desktop/All_in_one.png} % Ensure image is in the correct directory
             \caption{Height and Velocity against Time.}
             \label{fig:example}
         \end{figure}
@@ -260,7 +261,7 @@ Using the equations listed prior and discrete approximations of them (using time
 \begin{column}{0.5\colwidth}
    \begin{figure}
         \centering
-        \includegraphics[width=1\linewidth]{/Users/carsonthomas/varience.png}
+        \includegraphics[width=1\linewidth]{/Users/carsonthomas/Desktop/varience.png}
         \caption{Varience against spill hole radii}
         \label{fig:example}
     \end{figure}
@@ -270,7 +271,7 @@ Using the equations listed prior and discrete approximations of them (using time
 \vspace{0pt} % Adjust this value to align the key with the equations   
      \begin{figure}
         \centering
-        \includegraphics[width=1\linewidth]{/Users/carsonthomas/Downloads/Chart(1).png}
+        \includegraphics[width=1\linewidth]{/Users/carsonthomas/Desktop/Chart(1).png}
         \caption{Height and Velocity Against Time, with moving average.}
         \label{fig:Figure 3}
     \end{figure}
@@ -290,17 +291,18 @@ Using the equations listed prior and discrete approximations of them (using time
 
   \begin{block}{Discussion}
 
-This study aim to investigate the effects that varying spill hole size has on the efficacy of parachutes. Due to the decrease in cross-sectional area the expected time should decrease as seen in Figure 1 and Table 1, the simulated results show a negative relationship between the spill hole size and the time that the parachute would take to hit the ground. What this demonstrates is that as the cross-sectional area of the parachute decreases and the drag coefficient decreases the time should also decrease. With this in mind as we look to Table 2, Figure 2 and Figure 4 this is what we see, there is a negative trend between the time taken for the parachutes to fall and the size of the spill hole. While the expected results are more linear in nature than the experimental results there is still a negative trend. What the simulations don't speak to is the stability of the parachutes as the  spill hole gets larger. My hypothesis on this relationship would be that as the spill hole gets larger it would create a uniform path for the air to take as the parachute fell creating a more consistent and stable parachute. These increases in consistency and stability should plateau as the spill hole size increases. When looking to Table 2 (Variance) and figure 3 focusing on the variance, a measure of the spread or dispersion within a set of data, one would expect the variance to decrease as the spill hole size increased and this is exactly what we see. In Figure 3 we see a roughly exponential relationship between the spill hole size and the variance, we see a plateau of the decreases in variance with the variance approaching the asymptote of the exponential at zero. The fluid will take the path of least resistance so as a spill hole is introduced it creates a uniform path of least resistance for fluid to take leading to more consistent and stable parachutes. The limitations of this experiment come down to the accuracy of timing, in these runs a stopwatch was used to time from the moment of release to the moment the parachute hit the ground this introduces human error when it comes to the starting and stopping of the timer. Also the simulations used estimated values for the Coefficient of Drag. The accuracy of the timing could be improved by using a camera to record the drop and then count the number of frames the drop took. And the simulation accuracy could be  improved if a CFD was used to find the Coefficient of Drag.
+This investigation aimed to find the effects that varying spill hole size has on the efficacy of parachutes. Due to the decrease in cross-sectional area the expected time should decrease as seen in Figure 1 and Table 1, the simulated results show a negative relationship between the spill hole size and the time that the parachute would take to hit the ground. In the simulations this is due to the $A$ (Cross-sectional area) and the $C$ (Coefficient of drag) both decreasing leading to decrease in the $F_{drag}$ the force of drag. Considering this when examining Table 2, Figure 2 and Figure 4, a clear negative trend between the time taken for the parachutes to fall and the size of the spill hole is observed. While the expected results are more linear in nature than the experimental results there is still a negative trend. What the simulations don't speak to is the stability of the parachutes as the spill hole gets larger. The expected relationship would be that as the spill hole gets larger it would create a uniform path for the air to take as the parachute fell creating a more consistent and stable parachute. These increases in consistency and stability should plateau as the spill hole size increases. When looking to Table 2 (Variance) and figure 3 focusing on the variance, a measure of the spread or dispersion within a set of data, one would expect the variance to decrease as the spill hole size increased and this is exactly what we see. In Figure 3 we see a roughly exponential relationship between the spill hole size and the variance, we see a plateau of the decreases in variance with the variance approaching the asymptote of the exponential at zero. The fluid will take the path of least resistance so as a spill hole is introduced it creates a uniform path of least resistance for fluid to take leading to more consistent and stable parachutes. The limitations of this experiment come down to the accuracy of timing, in these runs a stopwatch was used to time from the moment of release to the moment the parachute hit the ground this introduced an element of human error as it pertains to the starting and stopping of the timer. Also the simulations used estimated values for the Coefficient of Drag this would obviously create an element of error to the simulation but given the how closely the experimental results matched the simulated results the estimates were accurate enough for this application. The accuracy of the timing could be improved by using a camera to record the drop and then counting the number of frames the drop took and the simulation accuracy could be  improved if a CFD was used to find the Coefficient of Drag. The recording would increase the accuracy of timing down to plus or minus a frame per drop and the CFD would increase the simulation accuracy to near perfection.
  \end{block}
 
   \begin{block}{Conclusion}
-The aim of this investigation was to find the relationship between the size of a spill hole and the performance of a parachute. This was accomplished by dropping parachutes with increasingly large spill holes and recording the time each took to reach the ground. There was a level of variation in the data from one run to the next and this can be attributed to the human error appearing during the timing of the drops. Due to this human error the validity of the results could be improved, but in spite the human error the results of the experiment were in line with the hypothesis. The study of optimal parachutes is pivotal in creating safe and stable sky diving and supply drops, while on this scale likely having negligible effects on the field. By investigating the optimisation of parachute spill holes more safe and stable parachutes in the future.
+The aim of this investigation was to find the relationship between the size of a spill hole and the performance of a parachute. This was accomplished by dropping parachutes with increasingly large spill holes and recording the time each took to reach the ground. If this investigation was to be reproduced in the future the changes that would be made would address the accuracy of timing the drops and the accuracy of the simulations. The accuracy of the timing could be improved by using a camera to record the drop and then counting the number of frames the drop took and the simulation accuracy could be  improved if a CFD was used to find the Coefficient of Drag. The recording would reduce the margin of error of timing down to $\pm $ one frame per drop and the CFD would increase the simulation accuracy to near perfection. The study of optimal parachutes is pivotal in creating safe and stable sky diving and supply drops, while on this scale unlikely to have to have any impact on the wider field. By investigating the optimisation of parachutes, more safe and stable parachutes can be achieved in the future.
   \end{block}
 
   \begin{block}{References}
 
 \section*{References}
-
+\begingroup
+\footnotesize
 \begin{thebibliography}{9}
 
 \bibitem{Benson2024}
@@ -327,7 +329,7 @@ Wikipedia Contributors (2019). \emph{Terminal velocity}. [online] Wikipedia. Ava
 \bibitem{Yang2015}
 Yang, H., Fan, M., Liu, A. and Dong, L. (2015). General formulas for drag coefficient and settling velocity of sphere based on theoretical law. \emph{International Journal of Mining Science and Technology}, 25(2), pp.219–223. doi:\href{https://doi.org/10.1016/j.ijmst.2015.02.009}{10.1016/j.ijmst.2015.02.009}.
 \end{thebibliography}
-
+\endgroup
   \end{block}
 
 \end{column}
