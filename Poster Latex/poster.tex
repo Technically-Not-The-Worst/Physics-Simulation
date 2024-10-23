@@ -9,7 +9,7 @@
 
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
-\usepackage[size=custom,width=120,height=72,scale=1.0]{beamerposter}
+\usepackage[size=custom,width=120,height=80,scale=1.0]{beamerposter}
 \usetheme{gemini}
 \usecolortheme{gemini}
 \usepackage{graphicx}
@@ -32,11 +32,11 @@
 
 % If you have N columns, choose \sepwidth and \colwidth such that
 % (N+1)*\sepwidth + N*\colwidth = \paperwidth
-\setbeamerfont{itemize item}{size=\fontsize{21pt}{27pt}} % Double itemize items font size
-\setbeamerfont{itemize subitem}{size=\fontsize{21pt}{27pt}} % Double subitemize items font size
-\setbeamerfont{block title}{size=\fontsize{25pt}{31pt}} % Double block titles font size
-\setbeamerfont{block body}{size=\fontsize{21pt}{27pt}} % Double block bodies font size
-\setbeamerfont{caption}{size=\fontsize{17pt}{23pt}} % Double figure captions font size
+\setbeamerfont{itemize item}{size=\fontsize{22pt}{26pt}} % Double itemize items font size
+\setbeamerfont{itemize subitem}{size=\fontsize{22pt}{26pt}} % Double subitemize items font size
+\setbeamerfont{block title}{size=\fontsize{24pt}{29pt}} % Double block titles font size
+\setbeamerfont{block body}{size=\fontsize{22pt}{26pt}} % Double block bodies font size
+\setbeamerfont{caption}{size=\fontsize{19pt}{23pt}} % Double figure captions font size
 
 \newlength{\sepwidth}
 \newlength{\colwidth}
@@ -103,7 +103,10 @@ For this experiment the independent variable will be the radius and hence size o
     \end{itemize}
 
 Given all other factors are constant across the parachutes, the independant variable will be the size of the spill hole. This experiment will involve a total of 11 parachutes: one control parachute without a spill hole and 10 parachutes with progressively larger spill holes. The size of each spill hole will be measured by its radius, which will increase incrementally by 5 mm. Each parachute will have a string attached to a 50g mass at four equidistant points. All parachutes will be dropped from a height of 9 meters, and the time from release to landing will be recorded.
-
+\begin{columns}[t]
+\hspace{20pt} % Adjust the value as needed for spacing
+\begin{column}{0.5\colwidth}
+\vspace{-20pt}
 \begin{enumerate}
     \item Ensure that all parachutes are identical in terms of material, shape, and overall size, except for the size of the spill hole.
     
@@ -120,8 +123,14 @@ Given all other factors are constant across the parachutes, the independant vari
 
     \item Record the time for each parachute to analyze the effect of the spill hole size on the parachute's descent time.
 \end{enumerate}
+\end{column}
+\begin{column}{0.7\colwidth}
+\vspace{70pt}
 
+            \includegraphics[width=0.85\linewidth]{/Users/carsonthomas/Downloads/image.png} % Ensure image is in the correct ght and Velocity against Time.}
 
+\end{column}
+\end{columns}
   \end{block}
 \begin{alertblock}{The physics at play}
 \begin{columns}[t]
@@ -165,7 +174,7 @@ Given all other factors are constant across the parachutes, the independant vari
 \end{itemize}
 \end{column}
 \end{columns}
-\
+
 \end{alertblock}
 \end{column}
 
@@ -291,7 +300,7 @@ Using the equations listed previously and discrete approximations of them (with 
 
   \begin{block}{Discussion}
 
-This investigation aimed to find the effects that varying spill hole size has on the efficacy of parachutes. Due to the decrease in cross-sectional area the expected time should decrease as seen in Figure 1 and Table 1, the simulated results show a negative relationship between the spill hole size and the time that the parachute would take to hit the ground. In the simulations this is due to the $A$ (Cross-sectional area) and the $C$ (Coefficient of drag) both decreasing leading to decrease in the $F_{drag}$ the force of drag. Considering this when examining Table 2, Figure 2 and Figure 4, a clear negative trend between the time taken for the parachutes to fall and the size of the spill hole is observed. While the expected results are more linear in nature than the experimental results there is still a negative trend. What the simulations don't speak to is the stability of the parachutes as the spill hole gets larger. The expected relationship would be that as the spill hole gets larger it would create a uniform path for the air to take as the parachute fell creating a more consistent and stable parachute. These increases in consistency and stability should plateau as the spill hole size increases. When looking to Table 2 (Variance) and figure 3 focusing on the variance, a measure of the spread or dispersion within a set of data, one would expect the variance to decrease as the spill hole size increased and this is exactly what we see. In Figure 3 we see a roughly exponential relationship between the spill hole size and the variance, we see a plateau of the decreases in variance with the variance approaching the asymptote of the exponential at zero. The fluid will take the path of least resistance so as a spill hole is introduced it creates a uniform path of least resistance for fluid to take leading to more consistent and stable parachutes. The limitations of this experiment come down to the accuracy of timing, in these runs a stopwatch was used to time from the moment of release to the moment the parachute hit the ground this introduced an element of human error to both the starting and stopping of the timer, over a large enough sample size this error would be minimised but with three tests per parachute it may come into play. Also the simulations used estimated values for the Coefficient of Drag this would obviously create an element of error to the simulation but given the how closely the experimental results matched the simulated results, the estimates appear to be  accurate enough for the purposes of this application. 
+This investigation aimed to find the effects that varying spill hole size has on the efficacy of parachutes. Due to the decrease in cross-sectional area the expected time should decrease as seen in Figure 1 and Table 1, the simulated results show a negative relationship between the spill hole size and the time that the parachute would take to hit the ground. In the simulations this is due to the $A$ (Cross-sectional area) and the $C$ (Coefficient of drag) both decreasing leading to decrease in the $F_{drag}$ the force of drag. Considering this when examining Table 2, Figure 2 and Figure 4, a clear negative trend between the time taken for the parachutes to fall and the size of the spill hole is observed. While the expected results are more linear in nature than the experimental results there is still a negative trend. What the simulations don't speak to is the stability of the parachutes as the spill hole gets larger. The expected relationship would be that as the spill hole gets larger it would create a uniform path for the air to take as the parachute fell creating a more consistent and stable parachute. These increases in consistency and stability should plateau as the spill hole size increases. When looking to Table 2 (Variance) and figure 3 focusing on the variance, a measure of the spread or dispersion within a set of data, one would expect the variance to decrease as the spill hole size increased and this is exactly what we see. In Figure 3 we see a roughly exponential relationship between the spill hole size and the variance, we see a plateau of the decreases in variance with the variance approaching the asymptote of the exponential at zero. The fluid will take the path of least resistance so as a spill hole is introduced it creates a uniform path of least resistance for fluid to take leading to more consistent and stable parachutes. The limitations of this experiment come down to the accuracy of timing, in these runs a stopwatch was used to time from the moment of release to the moment the parachute hit the ground this introduced an element of human error to both the starting and stopping of the timer, over a large enough sample size this error would be minimised but with three tests per parachute it may come into play. This error can be seen in the average times, while the expected outcome is every average of each spill hole size to be less than the prior. But this is not seen in the experimental results, see Table 2 rows 25mm and 30mm, it is clear that the average increases from 2.14s to 2.19s. This outcome is not expected given the simulations but can be largely attributed to timer error. There was also some extent of error in the simulations used estimated values for the Coefficient of Drag this would obviously create an element of error to the simulation but given the how closely the experimental results matched the simulated results, the estimates appear to be  accurate enough for the purposes of this application. 
  \end{block}
 
   \begin{block}{Conclusion}
